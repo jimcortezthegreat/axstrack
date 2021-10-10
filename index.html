@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glick</title>
+    <link rel="icon" href="/dist/img/icon.png">
+
+    <meta name="description" content="Glick">
+    <meta name="author" content="Richard Santiago">
+    <meta name="copyright" content="Richard Santiago"/>
+    <meta property="og:title" content="Glick">
+    <meta property="og:description" content="As Easy As Analytics Gets.">
+    <meta property="og:image" content="dist/img/preview.png"/>
+    <meta property="twitter:title" content="Glick">
+    <meta property="twitter:description" content="As Easy As Analytics Gets.">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="dist/css/main.css">
+    <link rel="stylesheet" href="dist/css/frame.css">
+
+    <!-- Box Icons -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- ===== Animate CSS ===== -->
+    <link rel="stylesheet" href="dist/css/animate.css"/>
+
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="row">
+                <a href="./">
+                    <div class="logo-container">
+                        <img class="logo" src="./dist/img/logo.svg" alt="logo">
+                    </div>
+                </a>
+
+                <div class="nav-menu">
+                   <p class="link-menu" onclick="showModal()">Donate</p>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="notif-wrapper center-center">
+        <div class="notif-modal success animate__animated">
+            <p>Copied to clipboard</p>
+        </div>
+    </div>
+
+    <div class="modal-container">
+    </div>
+    <div class="setting-modal center-center">
+        <div class="sub-container">
+            <div class="modal">
+                <div class="row-fe mb-1">
+                    <i class='bx bx-x close-md' onclick="showModal()"></i>
+                </div>
+                
+                <div class="mb-1">
+                    <p class="ad-tl mb-0">Ronin Address:</p>
+                    <div class="row-fs">
+                        <p class='clip-copy mr-0 text-center' id="ronin">Copy</p>
+                        <p class="ronin-ad">ronin:b0a0e13566938c31717eb607f800bfa953a018dc</p>
+                        <input class="ronin" type="text" value="ronin:b0a0e13566938c31717eb607f800bfa953a018dc" hidden>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="ad-tl mb-0">Gcash:</p>
+                    <div class="row-fs">
+                        <p class='clip-copy mr-0 text-center' id="gcash">Copy</p>
+                        <p class="gcash-nm">09667314622</p>
+                        <input class="gcash" type="text" value="09667314622" hidden>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="mt-5 mb-5">
+        <div class="sub-container center-center">
+            <div class="energy-counter column mb-0">
+                <p class="counter-title round"></p>
+                <div>
+                    <div class="group">
+                        <div class="energy-icon">
+                            <img src="./dist/img/energy.svg" alt="">
+                        </div>
+                        <p class="energy animate__animated animate__pulse animate__infinite"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="btn-grp row mt-0">
+                <div class="row">
+                    <p class="counter-button plus center-center mr-0">+</p>
+                    <p class="counter-button minus center-center ml-0">-</p>
+                </div>
+                <div class="btn-nxt center-center">
+                    <p>NEXT ROUND</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hero">
+        <div class="sub-container center-center">
+            <div class="stark-logo mb-0">
+                <img src="./dist/img/stark.svg" alt="">
+            </div>
+            <p class="hero-tl mt-0">Built by House Stark</p>
+        </div>
+    </section>
+    
+    <script src="dist/js/main.js"></script>
+</body>
+</html>
