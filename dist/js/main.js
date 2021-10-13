@@ -53,7 +53,9 @@ const showModal = () => {
 
 plus.addEventListener('click', e => {
     const prevEnergy = energy.innerText
-    energy.innerText = parseInt(prevEnergy) + 1
+    if(prevEnergy < 10) {
+        energy.innerText = parseInt(prevEnergy) + 1
+    }
 })
 
 minus.addEventListener('click', e => {
@@ -65,9 +67,18 @@ minus.addEventListener('click', e => {
 
 next.addEventListener('click', e => {
     const prevEnergy = energy.innerText
-    energy.innerText = parseInt(prevEnergy) + 2
-    rnd+=1
-    round.innerText = 'Round ' + rnd
+    const newEnergy = parseInt(prevEnergy) + 2
+    if(newEnergy >= 10) {
+        energy.innerText = 10
+        rnd+=1
+        round.innerText = 'Round ' + rnd
+    }
+    if(newEnergy < 10) {
+        energy.innerText = newEnergy
+        rnd+=1
+        round.innerText = 'Round ' + rnd
+    }
+    console.log(rnd)
 })
 
 
